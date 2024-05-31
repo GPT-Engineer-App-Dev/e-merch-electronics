@@ -21,19 +21,34 @@ const sampleProducts = [
     description: "Noise-cancelling over-ear headphones",
     image: "https://via.placeholder.com/150",
   },
+  {
+    name: "Smartwatch",
+    price: 299,
+    description: "Stylish smartwatch with health tracking",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    name: "Tablet",
+    price: 499,
+    description: "High-resolution display tablet",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    name: "Camera",
+    price: 799,
+    description: "Professional-grade camera",
+    image: "https://via.placeholder.com/150",
+  },
 ];
 
-const Index = () => {
+const Products = () => {
   return (
     <>
       <Navbar />
       <Container maxW="container.xl" py={8}>
         <VStack spacing={4} align="stretch">
           <Text fontSize="3xl" fontWeight="bold" textAlign="center">
-            Welcome to ElectroShop
-          </Text>
-          <Text fontSize="xl" textAlign="center">
-            Your one-stop shop for the latest electronics
+            Our Products
           </Text>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} mt={8}>
             {sampleProducts.map((product, index) => (
@@ -46,4 +61,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Products;
